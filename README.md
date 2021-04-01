@@ -18,7 +18,7 @@ LetsEncrypt speaks to domain over HTTP, going straight through the CDN
 layer to Varnish. Varnish passes these requests to a new backend for
 cert-manager.
 
-Use acmd-http-01-webroot to persist challenges, regardless of the use
+Use acme-http-01-webroot to persist challenges, regardless of the use
 of a webserver. That library only persists challenge responses to
 disk, meaning that the application would maintain correct state
 between restarts.
