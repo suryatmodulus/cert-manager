@@ -69,3 +69,6 @@ typings/
 .DS_Store
 
 # Cert Manager Custom
+/.greenlockrc
+/tmp/
+

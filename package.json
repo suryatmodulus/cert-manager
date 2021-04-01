@@ -20,5 +20,10 @@
     "should": "13.2.3",
     "sinon": "10.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@greenlock/manager": "^3.1.0",
+    "@root/greenlock": "v4",
+    "acme-http-01-webroot": "^3.0.0",
+    "ghost-ignition": "^4.6.1"
+  }
 }

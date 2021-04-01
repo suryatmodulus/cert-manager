@@ -1,0 +1,11 @@
+{
+    "greenlock": {
+        "configDirectory": "./tmp/config",
+        "challengeDirectory": "./tmp/challenges/{domain}",
+        "maintainerEmail": "sam@ghost.org",
+        "subscriberEmail": "sam@ghost.org"
+    },
+    "logging": {
+        "transports": ["stdout"]
+    }
+}

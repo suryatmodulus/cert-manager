@@ -1,10 +1,36 @@
 # Cert Manager
 
+Manages certificate lifecycle in Ghost (Pro).
+
+## Implementation notes
+
+### Adding a domain
+
+Cert-manager can talk to other Ghost (Pro) microservices through
+Molecular. This allows for simple inter-service communication -
+hopefully!
+
+### HTTP challenge
+
+For HTTP challenges the workflow should be:
+
+LetsEncrypt speaks to domain over HTTP, going straight through the CDN
+layer to Varnish. Varnish passes these requests to a new backend for
+cert-manager.
+
+Use acmd-http-01-webroot to persist challenges, regardless of the use
+of a webserver. That library only persists challenge responses to
+disk, meaning that the application would maintain correct state
+between restarts.
+
+### "Hook" results
+
+Greenlock has callbacks for various events, including renewals. These
+could be HTTP webhooks, but we could equally use Molecular.
+
 ## Install
 
-
 ## Usage
-
 
 ## Develop
 
