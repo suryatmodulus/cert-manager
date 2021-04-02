@@ -6,7 +6,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "dev": "echo \"Implement me!\"",
+    "dev": "node app.js",
     "test": "NODE_ENV=testing mocha './test/**/*.test.js'",
     "lint": "eslint . --ext .js --cache",
     "posttest": "yarn lint",
@@ -24,6 +24,8 @@
     "@greenlock/manager": "^3.1.0",
     "@root/greenlock": "v4",
     "acme-http-01-webroot": "^3.0.0",
-    "ghost-ignition": "^4.6.1"
+    "express": ">=5.0.0-alpha.8",
+    "ghost-ignition": "^4.6.1",
+    "greenlock-store-fs": "^3.2.2"
   }
 }

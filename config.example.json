@@ -5,6 +5,13 @@
         "maintainerEmail": "sam@ghost.org",
         "subscriberEmail": "sam@ghost.org"
     },
+    "api": {
+        "port": 6660
+    },
+    "challengeResponder": {
+        "port": 6661,
+        "directory": "./tmp/challenges"
+    },
     "logging": {
         "transports": ["stdout"]
     }

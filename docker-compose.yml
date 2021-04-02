@@ -1,0 +1,19 @@
+version: "3"
+services:
+  nginx:
+    image: "nginx:alpine"
+    ports:
+      - 80:80
+    volumes:
+      - ./test/docker-stuff/nginx/:/etc/nginx/
+      - ./test/docker-stuff/web/:/var/www/
+  greenlock:
+    image: "node:14-alpine"
+    ports:
+      - 6660:6660
+      - 6661:6661
+    working_dir: /home/node/app
+    command: "yarn dev"
+    user: "node"
+    volumes:
+      - ./:/home/node/app
