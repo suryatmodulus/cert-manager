@@ -7,13 +7,32 @@ services:
     volumes:
       - ./test/docker-stuff/nginx/:/etc/nginx/
       - ./test/docker-stuff/web/:/var/www/
+  pebble:
+    image: "letsencrypt/pebble"
+    ports:
+      - 14000:14000
+      - 15000:15000
+    environment:
+      PEBBLE_VA_NOSLEEP: 1
+    command: pebble -config /test/config/pebble-config.json
+    volumes:
+      - ./test/docker-stuff/pebble/config.json:/test/config/pebble-config.json
+      - ./test/docker-stuff/pebble/pebble.minica.pem:/test/certs/pebble.minica.pem
+      - ./test/docker-stuff/pebble/pebble.minica.key.pem:/test/certs/pebble.minica.key.pem
+    links:
+      - "nginx:ghost.local"
   greenlock:
     image: "node:14-alpine"
     ports:
       - 6660:6660
       - 6661:6661
     working_dir: /home/node/app
+    environment:
+      NODE_EXTRA_CA_CERTS: '/home/node/pebble.minica.pem'
     command: "yarn dev"
     user: "node"
     volumes:
       - ./:/home/node/app
+      - ./test/docker-stuff/pebble/pebble.minica.pem:/home/node/pebble.minica.pem
+    links:
+      - "nginx:ghost.local"

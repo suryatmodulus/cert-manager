@@ -6,7 +6,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js",
+    "dev": " node app.js",
     "test": "NODE_ENV=testing mocha './test/**/*.test.js'",
     "lint": "eslint . --ext .js --cache",
     "posttest": "yarn lint",

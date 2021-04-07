@@ -3,7 +3,8 @@
         "configDirectory": "./tmp/config",
         "challengeDirectory": "./tmp/challenges/{domain}",
         "maintainerEmail": "sam@ghost.org",
-        "subscriberEmail": "sam@ghost.org"
+        "subscriberEmail": "sam@ghost.org",
+        "directoryUrl": "https://pebble:14000/dir"
     },
     "api": {
         "port": 6660

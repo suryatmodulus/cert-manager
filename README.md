@@ -34,6 +34,12 @@ could be HTTP webhooks, but we could equally use Molecular.
 
 ## Develop
 
+For local development, we want to be able to register and remove
+domains using real components to ensure that the Greenlock library is
+being called correctly. The best setup for this is to have local DNS
+setup to enable `.local` domains, and using
+[Pebble](https://github.com/letsencrypt/pebble) as an ACME server.
+
 1. `git clone` this repo & `cd` into it as usual
 2. Run `yarn` to install top-level dependencies.
 
