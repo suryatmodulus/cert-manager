@@ -133,10 +133,10 @@
     "@root/request" "^1.6.1"
     "@root/x509" "^0.7.2"
 
-"@sam-lord/greenlock@v4":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.1.0.tgz#0bc6b59fef43d30e13dfb5cb0f658bcedad56773"
-  integrity sha512-Ta+QEoNoBDS3E+FgLJ38XA2K/vrBGD+CaYeo//6cwCs4d9q7zBzF3or6caABv0ZuGQj3RVIOZe9Vbc8ziyRRKg==
+"@sam-lord/greenlock@4":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.1.2.tgz#4a41a23a24e5141b5946cb64f53c886ae38c08aa"
+  integrity sha512-xEFbtCF9e26kOsZIZiUu/kpR1txgN/05c4sgbRT+OtXfQhA1U7neLf7are99wsBQX5Tyl+84lqIBi6gIFR0dfQ==
   dependencies:
     "@greenlock/manager" "^3.1.0"
     "@root/csr" "^0.8.1"

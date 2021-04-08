@@ -28,8 +28,6 @@ between restarts.
 Greenlock has callbacks for various events, including renewals. These
 could be HTTP webhooks, but we could equally use Molecular.
 
-## Install
-
 ## Usage
 
 ## Develop
@@ -42,7 +40,9 @@ setup to enable `.local` domains, and using
 
 1. `git clone` this repo & `cd` into it as usual
 2. Run `yarn` to install top-level dependencies.
-
+3. Use `docker-compose up` to start a test environment
+4. Curl the API to add domains, remove them, and get their certificates
+5. (Optionally) Setup a HTTPS server to test loading the certificates
 
 ## Run
 
