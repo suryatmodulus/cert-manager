@@ -7,7 +7,8 @@
         "directoryUrl": "https://pebble:14000/dir"
     },
     "api": {
-        "port": 6660
+        "port": 6660,
+        "hmac": "test"
     },
     "challengeResponder": {
         "port": 6661,

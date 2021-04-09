@@ -33,7 +33,7 @@ services:
     working_dir: /home/node/app
     environment:
       NODE_EXTRA_CA_CERTS: '/home/node/pebble.minica.pem'
-    command: "yarn dev"
+    command: "yarn start"
     user: "node"
     volumes:
       - ./:/home/node/app

@@ -19,7 +19,7 @@ async function main() {
     challengeApp.listen(config.get('challengeResponder:port'));
     logging.info(`ACME challenge app listening on port ${config.get('challengeResponder:port')}`);
 
-    apiApp.use('/api', apiRoutes);
+    apiApp.use(apiRoutes);
     apiApp.listen(config.get('api:port'));
     logging.info(`Domain API listening on port ${config.get('api:port')}`);
 

@@ -121,6 +121,13 @@
     "@root/asn1" "^1.0.0"
     "@root/encoding" "^1.0.1"
 
+"@sam-lord/acme-http-01-webroot@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@sam-lord/acme-http-01-webroot/-/acme-http-01-webroot-3.0.1.tgz#62dd351ce96d972a24a2e78d4c10e9dbfa98bc57"
+  integrity sha512-WX3T78SO8rg1LQnsKkTEWQekfmUIu0ymliYFvjrU5nMGlh8XOdKDlOE9k9Upe+cY1sZnQSHqnLT5pSXtRKAasg==
+  dependencies:
+    "@root/mkdirp" "^1.0.0"
+
 "@sam-lord/acme@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@sam-lord/acme/-/acme-3.2.0.tgz#0c0cb607bda411a49e2f382763807f39cd00b5a2"
@@ -1929,6 +1936,11 @@ no-case@^3.0.4:
   dependencies:
     lower-case "^2.0.2"
     tslib "^2.0.3"
+
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-loggly-bulk@^2.2.4:
   version "2.2.5"

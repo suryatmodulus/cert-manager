@@ -30,6 +30,35 @@ could be HTTP webhooks, but we could equally use Molecular.
 
 ## Usage
 
+API accessible on port 6660 using HMAC signed requests.
+
+```
+POST /api/addDomain
+{
+  "domain": "ghost.local"
+}
+```
+
+```
+POST /api/removeDomain
+{
+  "domain": "ghost.local"
+}
+```
+
+```
+POST /api/getDomain
+{
+  "domain": "ghost.local"
+}
+```
+
+HTTP server for ACME challenge requests is available on
+port 6661. Requests with the URL set to a valid token and the `Host`
+header set to the correct domain will return the challenge
+response. Currently challenges are stored on disk, but in future they
+could be in-memory only.
+
 ## Develop
 
 For local development, we want to be able to register and remove
@@ -46,15 +75,23 @@ setup to enable `.local` domains, and using
 
 ## Run
 
-- `yarn dev`
-- View: [http://localhost:9999](http://localhost:9999)
-
+- `yarn start`
 
 ## Test
 
 - `yarn lint` run just eslint
 - `yarn test` run lint and tests
 
+For the main tests, the server should already be running using
+docker-compose. As the system is tightly integrated with a reference
+ACME service, it makes sense to use integration tests rather than just
+unit tests. The integration tests check authentication using HMAC
+signed requests, adding domains and removing domains.
+
+Currently, the only domain that is used in tests is `ghost.local` -
+this is the only domain which is "linked" using docker-compose. To add
+more valid domains, add them to the list of linked domains in the
+docker-compose file.
 
 ## Publish
 
