@@ -24,6 +24,7 @@
   "dependencies": {
     "@greenlock/manager": "^3.1.0",
     "@sam-lord/acme-http-01-webroot": "^3.0.1",
+    "@sam-lord/fastly-js": "^0.3.0",
     "@sam-lord/greenlock": "4",
     "acme-http-01-webroot": "^3.0.0",
     "express": ">=5.0.0-alpha.8",

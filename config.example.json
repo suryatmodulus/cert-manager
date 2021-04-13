@@ -14,6 +14,12 @@
         "port": 6661,
         "directory": "./tmp/challenges"
     },
+    "fastly": {
+        "apiKey": "REDACTED - Figure out how to store / inject this",
+        "tlsConfigurationName": "TLS v1.3",
+        "allowUntrustedRoot": true,
+        "rootCertificate": "/home/node/pebble.minica.pem"
+    },
     "logging": {
         "transports": ["stdout"]
     }

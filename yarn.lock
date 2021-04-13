@@ -140,6 +140,11 @@
     "@root/request" "^1.6.1"
     "@root/x509" "^0.7.2"
 
+"@sam-lord/fastly-js@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@sam-lord/fastly-js/-/fastly-js-0.3.0.tgz#b47676d859ae478113f869f41a8fb494973763ac"
+  integrity sha512-ZB+AVSd+Oduj04F7+7lXwpsrI/wFZqfzYQND2W4sTR7iudG+ANFVA1ikFASkv23rQpHAdd48jmxp5/eTSgzedg==
+
 "@sam-lord/greenlock@4":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.1.2.tgz#4a41a23a24e5141b5946cb64f53c886ae38c08aa"

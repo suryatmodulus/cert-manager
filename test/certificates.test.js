@@ -2,36 +2,52 @@
 // const testUtils = require('./utils');
 const {hmacFetch} = require('./utils');
 
+const BASE_URL = 'http://localhost:6660/api';
+
+const apiFetch = (url, body) => hmacFetch(`${BASE_URL}${url}`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(body)
+}).then(res => res.json());
+
 describe('Can add a certificate successfully', function () {
     // TODO: Add "before" and "after" to mkdirp test config directory
     // TODO: Use test config for testing
     // TODO: Launch docker-compose from `yarn test` to ensure test config used(?)
     
     it('Adds a domain', async function () {
-        const res = await hmacFetch('http://localhost:6660/api/addDomain', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                domain: 'ghost.local'
-            })
+        const res = await apiFetch('/addDomain', {
+            domain: 'ghost.local'
         });
 
-        const resJson = await res.json();
+        res.should.not.have.property('error');
+    });
 
-        resJson.should.not.have.property('error');
+    it('Can add domain which already exists as no-op', async function () {
+        const first = await apiFetch('/addDomain', {
+            domain: 'ghost.local'
+        });
+
+        const second = await apiFetch('/addDomain', {
+            domain: 'ghost.local'
+        });
+
+        second.should.have.property('message').equal('Domain ghost.local already exists in Greenlock');
     });
     
     it('Removes a domain', async function () {
-        const res = await hmacFetch('http://localhost:6660/api/removeDomain', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                domain: 'ghost.local'
-            })
+        const res = await apiFetch('/removeDomain', {
+            domain: 'ghost.local'
         });
 
-        const resJson = await res.json();
+        res.should.not.have.property('error');
+    });
 
-        resJson.should.not.have.property('error');
+    it('Uploads a certificate to Fastly', async function () {
+        const res = await apiFetch('/testUpload', {
+            domain: 'ghost.local'
+        });
+
+        res.should.not.have.property('error');
     });
 });
