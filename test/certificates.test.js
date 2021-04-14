@@ -50,4 +50,12 @@ describe('Can add a certificate successfully', function () {
 
         res.should.not.have.property('error');
     });
+
+    it('Updates a certificate in Fastly', async function () {
+        const res = await apiFetch('/testUpdate', {
+            domain: 'ghost.local'
+        });
+
+        res.should.not.have.property('error');
+    });
 });
