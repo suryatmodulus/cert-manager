@@ -16,9 +16,19 @@
     },
     "fastly": {
         "apiKey": "REDACTED - Figure out how to store / inject this",
-        "tlsConfigurationName": "TLS v1.3",
+        "tlsConfigurationName": "Ghost Foundation Platform TLS",
         "allowUntrustedRoot": true,
         "rootCertificate": "/home/node/pebble.minica.pem"
+    },
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host": "mysql",
+            "user": "root",
+            "password": "certmanager",
+            "database": "greenlock",
+            "charset": "utf8"
+        }
     },
     "logging": {
         "transports": ["stdout"]

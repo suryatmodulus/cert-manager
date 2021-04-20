@@ -14,7 +14,7 @@ describe('Can add a certificate successfully', function () {
     // TODO: Add "before" and "after" to mkdirp test config directory
     // TODO: Use test config for testing
     // TODO: Launch docker-compose from `yarn test` to ensure test config used(?)
-    
+
     it('Adds a domain', async function () {
         const res = await apiFetch('/addDomain', {
             domain: 'ghost.local'
@@ -24,7 +24,7 @@ describe('Can add a certificate successfully', function () {
     });
 
     it('Can add domain which already exists as no-op', async function () {
-        const first = await apiFetch('/addDomain', {
+        await apiFetch('/addDomain', {
             domain: 'ghost.local'
         });
 
@@ -33,14 +33,6 @@ describe('Can add a certificate successfully', function () {
         });
 
         second.should.have.property('message').equal('Domain ghost.local already exists in Greenlock');
-    });
-    
-    it('Removes a domain', async function () {
-        const res = await apiFetch('/removeDomain', {
-            domain: 'ghost.local'
-        });
-
-        res.should.not.have.property('error');
     });
 
     it('Uploads a certificate to Fastly', async function () {
@@ -53,6 +45,14 @@ describe('Can add a certificate successfully', function () {
 
     it('Updates a certificate in Fastly', async function () {
         const res = await apiFetch('/testUpdate', {
+            domain: 'ghost.local'
+        });
+
+        res.should.not.have.property('error');
+    });
+
+    it('Removes a domain', async function () {
+        const res = await apiFetch('/removeDomain', {
             domain: 'ghost.local'
         });
 
