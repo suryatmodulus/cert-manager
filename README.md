@@ -2,33 +2,9 @@
 
 Manages certificate lifecycle in Ghost (Pro).
 
-## Implementation notes
-
-### Adding a domain
-
-Cert-manager can talk to other Ghost (Pro) microservices through
-Molecular. This allows for simple inter-service communication -
-hopefully!
-
-### HTTP challenge
-
-For HTTP challenges the workflow should be:
-
-LetsEncrypt speaks to domain over HTTP, going straight through the CDN
-layer to Varnish. Varnish passes these requests to a new backend for
-cert-manager.
-
-Use acme-http-01-webroot to persist challenges, regardless of the use
-of a webserver. That library only persists challenge responses to
-disk, meaning that the application would maintain correct state
-between restarts.
-
-### "Hook" results
-
-Greenlock has callbacks for various events, including renewals. These
-could be HTTP webhooks, but we could equally use Molecular.
-
 ## Usage
+
+### API access
 
 API accessible on port 6660 using HMAC signed requests.
 
@@ -53,11 +29,16 @@ POST /api/getDomain
 }
 ```
 
-HTTP server for ACME challenge requests is available on
-port 6661. Requests with the URL set to a valid token and the `Host`
-header set to the correct domain will return the challenge
-response. Currently challenges are stored on disk, but in future they
-could be in-memory only.
+HTTP server for ACME challenge requests is available on port 6661, and
+is secured with a HMAC key. An example implementation of HMAC requests
+is available in the tests directory. Requests with the URL set to a
+valid token and the `Host` header set to the correct domain will
+return the challenge response. Challenge responses are stored in a
+database to ensure high-availability will work.
+
+### Service broker access
+
+As an alternative to the API, a service broker is available which allows users to 
 
 ## Develop
 

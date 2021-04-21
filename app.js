@@ -7,6 +7,7 @@ const logging = require('./lib/logging');
 const challengeResponder = require('./lib/challenge-responder');
 const apiRoutes = require('./lib/api');
 const greenlock = require('./lib/greenlock');
+const serviceBroker = require('./lib/service-broker');
 
 /**
  * Main functionality includes:
@@ -22,6 +23,8 @@ async function main() {
     apiApp.use(apiRoutes);
     apiApp.listen(config.get('api:port'));
     logging.info(`Domain API listening on port ${config.get('api:port')}`);
+
+    serviceBroker.start();
 
     // Initialise greenlock
     await greenlock();

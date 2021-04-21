@@ -11,12 +11,14 @@
     "lint": "eslint . --ext .js --cache",
     "posttest": "yarn lint",
     "preship": "yarn test",
+    "serviceBroker": "./node_modules/.bin/moleculer connect stan://localhost:4222 --ns cert-manager --id local",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
   },
   "devDependencies": {
     "eslint": "7.24.0",
     "eslint-plugin-ghost": "2.0.0",
     "mocha": "8.3.2",
+    "moleculer-cli": "^0.7.1",
     "node-fetch": "2.6.1",
     "should": "13.2.3",
     "sinon": "10.0.0"
@@ -33,7 +35,9 @@
     "express": ">=5.0.0-alpha.8",
     "ghost-ignition": "^4.6.1",
     "greenlock-store-fs": "^3.2.2",
+    "moleculer": "^0.14.13",
     "mysql2": "^2.2.5",
+    "node-nats-streaming": "^0.3.2",
     "sequelize": "^6.6.2"
   }
 }

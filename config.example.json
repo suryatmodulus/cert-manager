@@ -10,9 +10,22 @@
         "port": 6660,
         "hmac": "test"
     },
+    "broker": {
+        "namespace": "cert-manager",
+        "logLevel": "info",
+        "hotReload": true,
+        "transporter": {
+            "type": "STAN",
+            "options": {
+                "url": "stan://nats:4222"
+            }
+        },
+        "retryPolicy": {
+            "enabled": true
+        }
+    },
     "challengeResponder": {
-        "port": 6661,
-        "directory": "./tmp/challenges"
+        "port": 6661
     },
     "fastly": {
         "apiKey": "REDACTED - Figure out how to store / inject this",
