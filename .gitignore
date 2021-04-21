@@ -71,4 +71,4 @@ typings/
 # Cert Manager Custom
 /.greenlockrc
 /tmp/
-
+/config.development.json
