@@ -35,22 +35,16 @@ describe('Can add a certificate successfully', function () {
         second.should.have.property('message').equal('Domain ghost.local already exists in Greenlock');
     });
 
-    it('Uploads a certificate to Fastly', async function () {
-        const res = await apiFetch('/testUpload', {
+    it('Gets a domain', async function () {
+        const res = await apiFetch('/getDomain', {
             domain: 'ghost.local'
         });
 
+        console.log('Domain: ' + JSON.stringify(res, null, 2));
         res.should.not.have.property('error');
+        res.should.have.property('result').not.null();
     });
-
-    it('Updates a certificate in Fastly', async function () {
-        const res = await apiFetch('/testUpdate', {
-            domain: 'ghost.local'
-        });
-
-        res.should.not.have.property('error');
-    });
-
+    
     it('Removes a domain', async function () {
         const res = await apiFetch('/removeDomain', {
             domain: 'ghost.local'
