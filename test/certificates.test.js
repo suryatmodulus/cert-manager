@@ -32,7 +32,7 @@ describe('Can add a certificate successfully', function () {
             domain: 'ghost.local'
         });
 
-        second.should.have.property('message').equal('Domain ghost.local already exists in Greenlock');
+        second.should.have.property('success').equal(true);
     });
 
     it('Gets a domain', async function () {

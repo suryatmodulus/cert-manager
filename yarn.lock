@@ -253,10 +253,10 @@
   dependencies:
     "@tryghost/fastly-js" "^0.1.1"
 
-"@tryghost/greenlock-manager-fastly@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-fastly/-/greenlock-manager-fastly-0.1.0.tgz#09e6c0a387b67f14dfa60c8b355d57a476b1816f"
-  integrity sha512-ywIsXk+Gl/7phlviCTKCq9Ru0BWYdQWzA2bEzU7+c3Nos7KV5OMBAvcDceLCxC7qybInoYKPL/hnnwTVpuOklQ==
+"@tryghost/greenlock-manager-fastly@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-fastly/-/greenlock-manager-fastly-0.2.0.tgz#1fc9d27c9dd0f7176e3a0cf628bb2e9ea014adf2"
+  integrity sha512-YTk57i5YWA20HJPL3kgoNr5/fEYYDdSKzLHPv3xN+SUGwLkDNHuWdiNhyeaMy6FztcUemmaE+gPKQFESAmp6Vw==
   dependencies:
     "@tryghost/fastly-js" "^0.1.1"
 
