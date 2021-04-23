@@ -40,11 +40,10 @@ describe('Can add a certificate successfully', function () {
             domain: 'ghost.local'
         });
 
-        console.log('Domain: ' + JSON.stringify(res, null, 2));
         res.should.not.have.property('error');
         res.should.have.property('result').not.null();
     });
-    
+
     it('Removes a domain', async function () {
         const res = await apiFetch('/removeDomain', {
             domain: 'ghost.local'
