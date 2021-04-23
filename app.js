@@ -7,6 +7,7 @@ const logging = require('./lib/logging');
 const challengeResponder = require('./lib/challenge-responder');
 const apiRoutes = require('./lib/api');
 const greenlock = require('./lib/greenlock');
+const GreenlockService = require('./lib/greenlock-service');
 const serviceBroker = require('./lib/service-broker');
 
 /**
@@ -16,18 +17,25 @@ const serviceBroker = require('./lib/service-broker');
  * - starting Greenlock
  */
 async function main() {
-    challengeApp.use(challengeResponder);
+    const greenlockService = new GreenlockService({
+        greenlock: await greenlock()
+    });
+
+    challengeApp.use(challengeResponder({
+        greenlock: greenlockService
+    }));
     challengeApp.listen(config.get('challengeResponder:port'));
     logging.info(`ACME challenge app listening on port ${config.get('challengeResponder:port')}`);
 
-    apiApp.use(apiRoutes);
+    apiApp.use(apiRoutes({
+        greenlock: greenlockService
+    }));
     apiApp.listen(config.get('api:port'));
     logging.info(`Domain API listening on port ${config.get('api:port')}`);
 
-    serviceBroker.start();
-
-    // Initialise greenlock
-    await greenlock();
+    serviceBroker({
+        greenlock: greenlockService
+    }).start();
 }
 
 main();

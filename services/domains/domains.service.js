@@ -1,7 +1,6 @@
-const greenlock = require('../../lib/greenlock-service');
 const errors = require('ghost-ignition').errors;
 
-module.exports = {
+module.exports = ({greenlock}) => ({
     name: 'domains',
     methods: {}, // TODO
     actions: {
@@ -90,4 +89,4 @@ module.exports = {
             }
         }
     }
-};
+});
