@@ -33,6 +33,7 @@ const hmacFetch = (resource, init) => {
     return fetch(url.origin + signedPath, init);
 };
 
+
 module.exports = {
     hmacFetch
 };
