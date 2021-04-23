@@ -11,7 +11,7 @@ describe('Correctly stores and retrieves challenges', function () {
         const greenlock = new GreenlockService({
             greenlock: {
                 challenges: {
-                    get: function({token, servername}) {
+                    get: function ({token, servername}) {
                         return challengeHandler.get({
                             challenge: {
                                 identifier: {
@@ -25,7 +25,7 @@ describe('Correctly stores and retrieves challenges', function () {
             }
         });
         app.use(challengeResponder({greenlock}));
-    }) 
+    });
     
     it('Retrieves challenge correctly', async function () {
         const servername = 'ghost.local';
@@ -42,16 +42,15 @@ describe('Correctly stores and retrieves challenges', function () {
         });
 
         const res = await request(app)
-              .get(`/.well-known/acme-challenge/${token}`)
-              .set('Host', servername)
-              .expect(200);
+            .get(`/.well-known/acme-challenge/${token}`)
+            .set('Host', servername)
+            .expect(200);
         res.text.should.equal(key);
     });
 
-    it('Cannot retrieve challenge with wrong token', async function() {
+    it('Cannot retrieve challenge with wrong token', async function () {
         const servername = 'ghost.local';
         const token = 'notValid';
-        const key = 'secret';
 
         await request(app)
             .get(`/.well-known/acme-challenge/${token}`)
