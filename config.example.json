@@ -28,10 +28,9 @@
         "port": 6661
     },
     "fastly": {
-        "apiKey": "REDACTED - Figure out how to store / inject this",
+        "apiKey": "REDACTED",
         "tlsConfigurationName": "Ghost Foundation Platform TLS",
-        "allowUntrustedRoot": true,
-        "rootCertificate": "/home/node/pebble.minica.pem"
+        "allowUntrustedRoot": true
     },
     "database": {
         "client": "mysql",
