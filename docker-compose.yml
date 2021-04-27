@@ -1,4 +1,19 @@
 version: "3"
+x-domains:
+  &default-domains
+  links:
+    - "nginx:ghost.local"
+    - "nginx:test.local"
+    - "nginx:test-1.local"
+    - "nginx:test-2.local"
+    - "nginx:test-3.local"
+    - "nginx:test-4.local"
+    - "nginx:test-5.local"
+    - "nginx:test-6.local"
+    - "nginx:test-7.local"
+    - "nginx:test-8.local"
+    - "nginx:test-9.local"
+    - "nginx:test-10.local"
 services:
   nginx:
     image: "nginx:alpine"
@@ -23,8 +38,7 @@ services:
       - ./test/docker-stuff/pebble/config.json:/test/config/pebble-config.json
       - ./test/docker-stuff/pebble/pebble.minica.pem:/test/certs/pebble.minica.pem
       - ./test/docker-stuff/pebble/pebble.minica.key.pem:/test/certs/pebble.minica.key.pem
-    links:
-      - "nginx:ghost.local"
+    << : *default-domains
   greenlock:
     image: "node:14-alpine"
     ports:
@@ -38,8 +52,7 @@ services:
     volumes:
       - ./:/home/node/app
       - ./test/docker-stuff/pebble/pebble.minica.pem:/home/node/pebble.minica.pem
-    links:
-      - "nginx:ghost.local"
+    << : *default-domains
   mysql:
     image: "mysql:8"
     command: --default-authentication-plugin=mysql_native_password --init-file /data/application/init.sql

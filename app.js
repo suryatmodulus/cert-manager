@@ -3,6 +3,7 @@ const apiApp = express();
 const challengeApp = express();
 
 const config = require('./lib/config');
+const dbConfig = require('./lib/database');
 const logging = require('./lib/logging');
 const challengeResponder = require('./lib/challenge-responder');
 const apiRoutes = require('./lib/api');
@@ -18,7 +19,8 @@ const serviceBroker = require('./lib/service-broker');
  */
 async function main() {
     const greenlockService = new GreenlockService({
-        greenlock: await greenlock()
+        greenlock: await greenlock(),
+        database: dbConfig
     });
 
     challengeApp.use(challengeResponder({
