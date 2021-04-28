@@ -5,6 +5,7 @@ const app = require('express')();
 const challengeResponder = require('../../lib/challenge-responder');
 const GreenlockService = require('../../lib/greenlock-service');
 const challengeHandler = require('@tryghost/acme-http-01-sequelize').create({});
+const EventEmitter = require('events');
 
 describe('Correctly stores and retrieves challenges', function () {
     before(function () {
@@ -21,7 +22,9 @@ describe('Correctly stores and retrieves challenges', function () {
                             }
                         });
                     }
-                }
+                },
+
+                events: new EventEmitter()
             }
         });
         app.use(challengeResponder({greenlock}));

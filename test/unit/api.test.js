@@ -1,5 +1,6 @@
 const {getHmac} = require('../utils');
 
+const EventEmitter = require('events');
 const request = require('supertest');
 const app = require('express')();
 const apiRoutes = require('../../lib/api');
@@ -13,7 +14,7 @@ describe('API functions correctly', function () {
                 async add({subject}) {
                     certs[subject] = {
                         content: 'hello!'
-                    }
+                    };
                     return Promise.resolve({
                         success: true
                     });
@@ -35,7 +36,9 @@ describe('API functions correctly', function () {
                             success: true
                         });
                     }
-                }
+                },
+
+                events: new EventEmitter()
             }
         });
         app.use(apiRoutes({greenlock}));
@@ -47,7 +50,6 @@ describe('API functions correctly', function () {
             .send({domain: 'ghost.local'})
             .set('Accept', 'application/json');
 
-        console.log(res);
         res.body.success.should.be.true();
     });
 });

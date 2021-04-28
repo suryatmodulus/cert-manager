@@ -13,7 +13,7 @@ require('./assertions');
 const crypto = require('crypto');
 const fetch = require('node-fetch');
 const querystring = require('querystring');
-const { URLSearchParams } = require('url');
+const {URLSearchParams} = require('url');
 
 const config = require('../../lib/config');
 const HMAC_KEY = config.get('api:hmac');
