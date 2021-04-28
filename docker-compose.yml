@@ -22,10 +22,8 @@ services:
     volumes:
       - ./test/docker-stuff/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./test/docker-stuff/web/:/var/www/
-      # Enable the following lines when SSL certificates exist:
-      # - ./test/docker-stuff/nginx/ssl-site.conf:/etc/nginx/ssl-site.conf
-      # - ./tmp/config/pebble":14000/dir/ghost.local/fullchain.pem:/etc/ssl/ghost.local.pem;
-      # - ./tmp/config/pebble":14000/dir/ghost.local/privkey.pem:/etc/ssl/ghost.local.key.pem;
+      - ./test/docker-stuff/pebble/pebble.minica.pem:/etc/ssl/pebble.minica.pem
+      - ./test/docker-stuff/pebble/pebble.minica.key.pem:/etc/ssl/pebble.minica.key.pem
   pebble:
     image: "letsencrypt/pebble"
     ports:
