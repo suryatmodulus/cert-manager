@@ -1,6 +1,6 @@
 const errors = require('ghost-ignition').errors;
 
-module.exports = ({greenlock}) => ({
+module.exports = ({certificateService}) => ({
     name: 'domains',
     methods: {}, // TODO
     actions: {
@@ -27,7 +27,7 @@ module.exports = ({greenlock}) => ({
                 }
 
                 try {
-                    return await greenlock.addDomain(domain);
+                    return await certificateService.addDomain(domain);
                 } catch (error) {
                     this.logger.error(error);
                     throw error;
@@ -54,7 +54,7 @@ module.exports = ({greenlock}) => ({
                 }
 
                 try {
-                    return await greenlock.getDomain(domain);
+                    return await certificateService.getDomain(domain);
                 } catch (error) {
                     this.logger.error(error);
                     throw error;
@@ -81,7 +81,7 @@ module.exports = ({greenlock}) => ({
                 }
 
                 try {
-                    return await greenlock.removeDomain(domain);
+                    return await certificateService.removeDomain(domain);
                 } catch (error) {
                     this.logger.error(error);
                     throw error;

@@ -4,12 +4,12 @@ const EventEmitter = require('events');
 const request = require('supertest');
 const app = require('express')();
 const apiRoutes = require('../../lib/api');
-const GreenlockService = require('../../lib/greenlock-service');
+const CertificateService = require('../../lib/certificate-service');
 
 describe('API functions correctly', function () {
     before(function () {
         const certs = {};
-        const greenlock = new GreenlockService({
+        const certificateService = new CertificateService({
             greenlock: {
                 async add({subject}) {
                     certs[subject] = {
@@ -41,7 +41,7 @@ describe('API functions correctly', function () {
                 events: new EventEmitter()
             }
         });
-        app.use(apiRoutes({greenlock}));
+        app.use(apiRoutes({certificateService}));
     });
 
     it('Calls add correctly', async function () {

@@ -33,6 +33,8 @@
     },
     "fastly": {
         "apiKey": "REDACTED",
+        "ipOffset": "REDACTED",
+        "testPops": ["AMS"],
         "tlsConfigurationName": "Ghost Foundation Platform TLS",
         "allowUntrustedRoot": true
     },

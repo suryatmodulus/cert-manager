@@ -145,10 +145,10 @@
   dependencies:
     "@root/mkdirp" "^1.0.0"
 
-"@sam-lord/acme@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@sam-lord/acme/-/acme-3.2.1.tgz#a131a8651da717f755177b0a158b077acca428b3"
-  integrity sha512-f+7kPr+ImLDJ4WNwdjlA2WackW4hyy6og7JfXVJtYEctjBFQPCkUc6H2qXe297Kh/z+EK8nldzf+pyHJEb9qIA==
+"@sam-lord/acme@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@sam-lord/acme/-/acme-3.3.0.tgz#1a4acca76ce61830f74e005c22e4433813067764"
+  integrity sha512-EBHmaDXjF19/wuUBXn9uYomYqHGldDn+3NApZoTeR+L/FzyxPoRJcgydt327K9+jjgAEpP9cY3aUTa9Z8YX37Q==
   dependencies:
     "@root/csr" "^0.8.1"
     "@root/encoding" "^1.0.1"
@@ -157,17 +157,17 @@
     "@root/request" "^1.6.1"
     "@root/x509" "^0.7.2"
 
-"@sam-lord/greenlock@^4.1.3":
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.1.3.tgz#96e6624f8447171bfd889f9f975d8eed3aee6c46"
-  integrity sha512-O7OPGB3rP7r95vzgU8oMaM4PO4nn9wwLaJJ7cV7L5VrDfEsFoKJ08/xMbHuoR6vCigEfZd3W83uIwM2+XyW3QA==
+"@sam-lord/greenlock@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.2.0.tgz#90ee8f266544ed335e8769c5c2ef53c66f152eef"
+  integrity sha512-lIKuEUsDPQV8tHk7d0bhkJq1BwAv/pT1pDpRVdlY3mjQvWLv+gzIKxR2ErxnYJH9qFvMnnr2zekJiX6VmoIXWw==
   dependencies:
     "@greenlock/manager" "^3.1.0"
     "@root/csr" "^0.8.1"
     "@root/keypairs" "^0.10.0"
     "@root/mkdirp" "^1.0.0"
     "@root/request" "^1.6.1"
-    "@sam-lord/acme" "^3.2.1"
+    "@sam-lord/acme" "^3.3.0"
     acme-http-01-standalone "^3.0.5"
     cert-info "^1.5.1"
     greenlock-store-fs "^3.2.2"
@@ -243,6 +243,13 @@
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.1.1.tgz#0dedfb5777e39c19d4482eebb8ed83b9c862e792"
   integrity sha512-CSCAAkZuXZx5cVn6upob+htpENweuUTCm5G/yxasqIanAmTcipltULDATiRpFywCvb7dqlOcP48CcIR3T2ruMA==
+  dependencies:
+    node-fetch "^2.6.1"
+
+"@tryghost/fastly-js@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.3.tgz#3dbeab1792264b525a8bafe740429149224bb074"
+  integrity sha512-8Uf2/XB1saRBhDqM6l5koDXIsOcDh9P3FupeA4SBCG6Z4olz364MD5tEx7U7E34xURjJ+Wcu6oEdCOSZPDar6g==
   dependencies:
     node-fetch "^2.6.1"
 

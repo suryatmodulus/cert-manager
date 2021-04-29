@@ -3,13 +3,13 @@ require('../utils');
 const request = require('supertest');
 const app = require('express')();
 const challengeResponder = require('../../lib/challenge-responder');
-const GreenlockService = require('../../lib/greenlock-service');
+const CertificateService = require('../../lib/certificate-service');
 const challengeHandler = require('@tryghost/acme-http-01-sequelize').create({});
 const EventEmitter = require('events');
 
 describe('Correctly stores and retrieves challenges', function () {
     before(function () {
-        const greenlock = new GreenlockService({
+        const certificateService = new CertificateService({
             greenlock: {
                 challenges: {
                     get: function ({token, servername}) {
@@ -27,7 +27,7 @@ describe('Correctly stores and retrieves challenges', function () {
                 events: new EventEmitter()
             }
         });
-        app.use(challengeResponder({greenlock}));
+        app.use(challengeResponder({certificateService}));
     });
     
     it('Retrieves challenge correctly', async function () {
