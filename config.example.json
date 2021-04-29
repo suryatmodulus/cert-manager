@@ -6,6 +6,10 @@
         "subscriberEmail": "sam@ghost.org",
         "directoryUrl": "https://pebble:14000/dir"
     },
+    "rateLimiter": {
+        "amount": 100,
+        "duration": 3600
+    },
     "api": {
         "port": 6660,
         "hmac": "test"
