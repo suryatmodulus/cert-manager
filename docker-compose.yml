@@ -60,6 +60,8 @@ services:
       - ./test/docker-stuff/mysql/init.sql:/data/application/init.sql
     environment:
       MYSQL_ROOT_PASSWORD: certmanager
+    cap_add:
+      - SYS_NICE
   nats:
     image: "nats-streaming:alpine"
     ports:

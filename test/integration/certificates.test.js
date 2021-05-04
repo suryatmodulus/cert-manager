@@ -25,6 +25,23 @@ describe('Can add a certificate successfully', function () {
         res.should.not.have.property('error');
     });
 
+    it('Adds a second domain', async function () {
+        const res = await apiFetch('/addDomain', {
+            domain: 'test-1.local'
+        });
+
+        res.should.not.have.property('error');
+    });
+
+    it('Add many domains -- SLOW', async function () {
+        const domains = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(val => `test-${val}.local`);
+        for (const domain of domains) {
+            await apiFetch('/addDomain', {
+                domain
+            });
+        }
+    });
+
     it('Can add domain which already exists as no-op', async function () {
         await apiFetch('/addDomain', {
             domain: 'ghost.local'
