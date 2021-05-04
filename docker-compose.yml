@@ -44,10 +44,11 @@ services:
     ports:
       - 6660:6660
       - 6661:6661
+      - 9229:9229
     working_dir: /home/node/app
     environment:
       NODE_EXTRA_CA_CERTS: '/home/node/pebble.minica.pem'
-    command: "yarn start"
+    command: "yarn dev"
     user: "node"
     volumes:
       - ./:/home/node/app
