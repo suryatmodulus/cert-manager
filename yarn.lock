@@ -218,10 +218,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tryghost/acme-http-01-sequelize@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@tryghost/acme-http-01-sequelize/-/acme-http-01-sequelize-0.2.0.tgz#ed3ffd667ffbe3e50d03b0a51cc3695e158401d0"
-  integrity sha512-hqwkp2pBCBp4p1rZ3zwKb94lHUBQtkgyVjNR9ivf7p4FI8Wvfq/3V6Z9Zxy+PdIBeNPTk3bFo3w/dnbQ0hLN/Q==
+"@tryghost/acme-http-01-sequelize@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@tryghost/acme-http-01-sequelize/-/acme-http-01-sequelize-0.2.1.tgz#d8b795be7e84a9dc376ee840fe5e5e1e61140ff9"
+  integrity sha512-vPmEg+CMg8L3G9UGq8CP4SBkhwzHSKkEf0It+Y5ocKfE4n9xACOZXdcf9uB3oMK5qknIaASWF4CVO2D3qjDHRQ==
   dependencies:
     sequelize "^6.6.2"
 

@@ -27,10 +27,9 @@
     "supertest": "^6.1.3"
   },
   "dependencies": {
-    "@greenlock/manager": "^3.1.0",
     "@sam-lord/acme-http-01-webroot": "^3.0.1",
     "@sam-lord/greenlock": "^4.2.0",
-    "@tryghost/acme-http-01-sequelize": "^0.2.0",
+    "@tryghost/acme-http-01-sequelize": "^0.2.1",
     "@tryghost/fastly-js": "^0.2.3",
     "@tryghost/greenlock-fastly-store": "^0.1.2",
     "@tryghost/greenlock-manager-fastly": "^0.2.0",
@@ -39,7 +38,6 @@
     "acme-http-01-webroot": "^3.0.0",
     "express": ">=5.0.0-alpha.8",
     "ghost-ignition": "^4.6.1",
-    "greenlock-store-fs": "^3.2.2",
     "moleculer": "^0.14.13",
     "mysql2": "^2.2.5",
     "node-nats-streaming": "^0.3.2",
