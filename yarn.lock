@@ -246,20 +246,6 @@
   dependencies:
     node-fetch "^2.6.1"
 
-"@tryghost/greenlock-fastly-store@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-fastly-store/-/greenlock-fastly-store-0.1.4.tgz#5dabcb345b197d8f07f911b51e09a3f0b00a59c1"
-  integrity sha512-m1pjEzz8eTXR10/V56vVyDGf2FL4c8/V0oFBwuuHMY/cgOaWDBpGMW2fbdM8GYmOrVgpFYiNhN4vjIlsxqVHpw==
-  dependencies:
-    "@tryghost/fastly-js" "^0.2.5"
-
-"@tryghost/greenlock-manager-fastly@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-fastly/-/greenlock-manager-fastly-0.2.2.tgz#81c48c3a4b572feb42a45ca9d4b15b46ca81bc2d"
-  integrity sha512-EKQj+M5+BqHIzkNA3063kjjtaTLh58zCe72cxAHbL3U292+BZkV2QyuC5L+B78wLE0MGQCa698evNmvWfbjkOA==
-  dependencies:
-    "@tryghost/fastly-js" "^0.2.5"
-
 "@tryghost/greenlock-manager-sequelize@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-sequelize/-/greenlock-manager-sequelize-0.3.0.tgz#96191c77c6327813a232216ec5ee83b2b3a1efce"
