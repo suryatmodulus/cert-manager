@@ -239,26 +239,26 @@
   dependencies:
     "@elastic/elasticsearch" "^7.10.0"
 
-"@tryghost/fastly-js@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.4.tgz#7987daf2c683e90e8d87059a03870bc3905ced8a"
-  integrity sha512-JU8T96Odg8/tuvMyyY//LgC7gpkRNYDzA+rD/GP4D6nBkjwUOg/efLwIrs+l/140ewzVlLxdc4rWyG2trGemfg==
+"@tryghost/fastly-js@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.5.tgz#8ba964cd20134a59e9fcdc621796442eae01f3cc"
+  integrity sha512-HV3bfxy7b9GCPfrCenF0CLQMtG5ptbV9DpKoAnssGixpFhF/rIqQBtoqFwEV9b/tMEL+Y6P/2Tok5OE5yKnDXQ==
   dependencies:
     node-fetch "^2.6.1"
 
-"@tryghost/greenlock-fastly-store@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-fastly-store/-/greenlock-fastly-store-0.1.3.tgz#48a8de7bfb525257b77ce4cb32d9990dd9fb55bd"
-  integrity sha512-Il/mYfUtJ9HNRIoNIr0I+6osreg+CzIyN9SLOIlIvFBDNiSG63yU8aOm1pUSu0E5mbBzxm24KGJI6jFOO1nurw==
+"@tryghost/greenlock-fastly-store@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-fastly-store/-/greenlock-fastly-store-0.1.4.tgz#5dabcb345b197d8f07f911b51e09a3f0b00a59c1"
+  integrity sha512-m1pjEzz8eTXR10/V56vVyDGf2FL4c8/V0oFBwuuHMY/cgOaWDBpGMW2fbdM8GYmOrVgpFYiNhN4vjIlsxqVHpw==
   dependencies:
-    "@tryghost/fastly-js" "^0.2.4"
+    "@tryghost/fastly-js" "^0.2.5"
 
-"@tryghost/greenlock-manager-fastly@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-fastly/-/greenlock-manager-fastly-0.2.1.tgz#54ef1c5208332232b6f4ad68810bb06cb03d96da"
-  integrity sha512-IfxLAyCziJWMKWx4Jnwxa63xfN1z0DJzdrDVTjXyeWPN8bxuS7/8ulcTNMMXDiKStgv9uV7oicYn8gwZVb/MEg==
+"@tryghost/greenlock-manager-fastly@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-fastly/-/greenlock-manager-fastly-0.2.2.tgz#81c48c3a4b572feb42a45ca9d4b15b46ca81bc2d"
+  integrity sha512-EKQj+M5+BqHIzkNA3063kjjtaTLh58zCe72cxAHbL3U292+BZkV2QyuC5L+B78wLE0MGQCa698evNmvWfbjkOA==
   dependencies:
-    "@tryghost/fastly-js" "^0.2.4"
+    "@tryghost/fastly-js" "^0.2.5"
 
 "@tryghost/greenlock-manager-sequelize@^0.3.0":
   version "0.3.0"
