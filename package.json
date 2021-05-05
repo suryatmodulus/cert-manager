@@ -31,7 +31,7 @@
     "@sam-lord/acme-http-01-webroot": "^3.0.1",
     "@sam-lord/greenlock": "^4.2.0",
     "@tryghost/acme-http-01-sequelize": "^0.2.1",
-    "@tryghost/fastly-js": "^0.2.5",
+    "@tryghost/fastly-js": "^0.2.6",
     "@tryghost/greenlock-manager-sequelize": "^0.3.0",
     "@tryghost/greenlock-store-sequelize": "^0.1.0",
     "acme-http-01-webroot": "^3.0.0",

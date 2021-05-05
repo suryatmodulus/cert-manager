@@ -239,10 +239,10 @@
   dependencies:
     "@elastic/elasticsearch" "^7.10.0"
 
-"@tryghost/fastly-js@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.5.tgz#8ba964cd20134a59e9fcdc621796442eae01f3cc"
-  integrity sha512-HV3bfxy7b9GCPfrCenF0CLQMtG5ptbV9DpKoAnssGixpFhF/rIqQBtoqFwEV9b/tMEL+Y6P/2Tok5OE5yKnDXQ==
+"@tryghost/fastly-js@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.6.tgz#cac983b5e4699dd1768dafb7cba81d3b630c151e"
+  integrity sha512-RwwPw2LmEbFs4WOrSp50eBUPpR19lAcUAfRyMPuJ0zE4gII4+ohfWuGnS8RpyWUPKUJfJvJGgAw2JW6wkvMMdQ==
   dependencies:
     node-fetch "^2.6.1"
 
