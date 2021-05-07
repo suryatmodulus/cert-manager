@@ -34,7 +34,7 @@
     "@tryghost/greenlock-manager-sequelize": "0.3.0",
     "@tryghost/greenlock-store-sequelize": "0.2.0",
     "express": "5.0.0-alpha.8",
-    "ghost-ignition": "4.6.1",
+    "ghost-ignition": "4.6.2",
     "moleculer": "0.14.13",
     "mysql2": "2.2.5",
     "node-nats-streaming": "0.3.2",
