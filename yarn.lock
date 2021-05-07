@@ -150,7 +150,7 @@
     "@root/request" "^1.6.1"
     "@root/x509" "^0.7.2"
 
-"@sam-lord/greenlock@^4.2.0":
+"@sam-lord/greenlock@4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.2.0.tgz#90ee8f266544ed335e8769c5c2ef53c66f152eef"
   integrity sha512-lIKuEUsDPQV8tHk7d0bhkJq1BwAv/pT1pDpRVdlY3mjQvWLv+gzIKxR2ErxnYJH9qFvMnnr2zekJiX6VmoIXWw==
@@ -211,7 +211,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tryghost/acme-http-01-sequelize@^0.2.2":
+"@tryghost/acme-http-01-sequelize@0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@tryghost/acme-http-01-sequelize/-/acme-http-01-sequelize-0.2.2.tgz#ab4f39bdda9fde1600b96690a7a26b83797ef762"
   integrity sha512-kYnmQFdeJfA8RmApqXSKWUCzoHfcCdgXAdR/VEaMPCy9mjryvPtItoIML1Dv9SiGv9Q14G9bD+UhOmPk2pa4cQ==
@@ -232,21 +232,21 @@
   dependencies:
     "@elastic/elasticsearch" "^7.10.0"
 
-"@tryghost/fastly-js@^0.2.6":
+"@tryghost/fastly-js@0.2.6":
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.6.tgz#cac983b5e4699dd1768dafb7cba81d3b630c151e"
   integrity sha512-RwwPw2LmEbFs4WOrSp50eBUPpR19lAcUAfRyMPuJ0zE4gII4+ohfWuGnS8RpyWUPKUJfJvJGgAw2JW6wkvMMdQ==
   dependencies:
     node-fetch "^2.6.1"
 
-"@tryghost/greenlock-manager-sequelize@^0.3.0":
+"@tryghost/greenlock-manager-sequelize@0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-sequelize/-/greenlock-manager-sequelize-0.3.0.tgz#96191c77c6327813a232216ec5ee83b2b3a1efce"
   integrity sha512-53MCVF+1qZKrWu15tpGxwPq2vxlDR+addIe+poN8FbZkICTybg2/HymxMW6KBPvtuNsRMcKibJJdZoOjupaujg==
   dependencies:
     sequelize "^6.6.2"
 
-"@tryghost/greenlock-store-sequelize@^0.2.0":
+"@tryghost/greenlock-store-sequelize@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@tryghost/greenlock-store-sequelize/-/greenlock-store-sequelize-0.2.0.tgz#309f55e1dbe68a997f32c847b391160004c3ad53"
   integrity sha512-aAjqsyJz6ERHv8RfwbFrlkH24fl1BubVltEzRc151GZNlPdLyOvChoaN9zrXCx8G7Xlgt3CpNZbY8rubYOqfuQ==
@@ -1722,7 +1722,7 @@ exeq@^3.0.0:
   resolved "https://registry.yarnpkg.com/exeq/-/exeq-3.0.0.tgz#7f5fb572a433e3a32b5574fc102c4941e9bd5a68"
   integrity sha1-f1+1cqQz46MrVXT8ECxJQem9Wmg=
 
-express@>=5.0.0-alpha.8:
+express@5.0.0-alpha.8:
   version "5.0.0-alpha.8"
   resolved "https://registry.yarnpkg.com/express/-/express-5.0.0-alpha.8.tgz#b9dd3a568eab791e3391db47f9e6ab91e61b13fe"
   integrity sha512-PL8wTLgaNOiq7GpXt187/yWHkrNSfbr4H0yy+V0fpqJt5wpUzBi9DprAkwGKBFOqWHylJ8EyPy34V5u9YArfng==
@@ -2179,7 +2179,7 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-ghost-ignition@^4.6.1:
+ghost-ignition@4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/ghost-ignition/-/ghost-ignition-4.6.1.tgz#c6ddfecdd119f4c3479960423c5c2e0733f0708d"
   integrity sha512-y/taY4SBFJtBTTTXnyXSUsQXlyHpJQqTgtqtT8Rx293hyKNeE18q0JSCn7aJAl3sIZPsYwWpkpdrKh+zOSjvFA==
@@ -3243,7 +3243,7 @@ mocha@8.3.2:
     yargs-parser "20.2.4"
     yargs-unparser "2.0.0"
 
-moleculer-cli@^0.7.1:
+moleculer-cli@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/moleculer-cli/-/moleculer-cli-0.7.1.tgz#86358a2e5176e98d8a83bd3e06777cbd6d852a86"
   integrity sha512-RCiaP6Hd3WykuoTr9ezOZm6jD07/KJApHBgP7btITmsE9KztOs8qTOvzNxU3avbq4v3qdf2zZSsIMoHXdI07/w==
@@ -3285,7 +3285,7 @@ moleculer-repl@^0.6.4:
     table "^5.4.6"
     tiny-human-time "^1.2.0"
 
-moleculer@^0.14.13, moleculer@^0.14.5:
+moleculer@0.14.13, moleculer@^0.14.5:
   version "0.14.13"
   resolved "https://registry.yarnpkg.com/moleculer/-/moleculer-0.14.13.tgz#85fc55c15e09496a57dfa2050a6e7368c8743bb7"
   integrity sha512-ak5MIFWb0WwMBIIqw/cKlhFj+0huA7LjAYrv5bLSdluG0+aBRl3ZtST+6Ix4UA5qZ6cwhMsX+m9QtXGIs6CdVA==
@@ -3370,7 +3370,7 @@ mv@~2:
     ncp "~2.0.0"
     rimraf "~2.4.0"
 
-mysql2@^2.2.5:
+mysql2@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/mysql2/-/mysql2-2.2.5.tgz#72624ffb4816f80f96b9c97fedd8c00935f9f340"
   integrity sha512-XRqPNxcZTpmFdXbJqb+/CtYVLCx14x1RTeNMD4954L331APu75IC74GDqnZMEt1kwaXy6TySo55rF2F3YJS78g==
@@ -3531,7 +3531,7 @@ node-loggly-bulk@^2.2.4:
     moment "^2.18.1"
     request ">=2.76.0 <3.0.0"
 
-node-nats-streaming@^0.3.2:
+node-nats-streaming@0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/node-nats-streaming/-/node-nats-streaming-0.3.2.tgz#a6d1b77eae837495856893f573e3d78184b39833"
   integrity sha512-exeT+FwGYW3UbBSzu8a7ykwWoY6R/vjQLr1RoZ1gnoJ9F66WVvpMZQWCZzLxlf9XRpJTTygcp6P1+WRw9h07Sg==
@@ -4025,7 +4025,7 @@ range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
-rate-limiter-flexible@^2.2.1:
+rate-limiter-flexible@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/rate-limiter-flexible/-/rate-limiter-flexible-2.2.1.tgz#acb81a3d92a0f26bf7e9767e0f96de3a89ecb3a6"
   integrity sha512-rxCP6kDDdn0cZmVqVlF06yLU+mG3TuwaHV/fUIw3OQyYhza7pzVBtdMhUmfXbBzMS+O464XP+x33pfTDGRGYVA==
@@ -4361,7 +4361,7 @@ sequelize-pool@^6.0.0:
   resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-6.1.0.tgz#caaa0c1e324d3c2c3a399fed2c7998970925d668"
   integrity sha512-4YwEw3ZgK/tY/so+GfnSgXkdwIJJ1I32uZJztIEgZeAO6HMgj64OzySbWLgxj+tXhZCJnzRfkY9gINw8Ft8ZMg==
 
-sequelize@^6.6.2:
+sequelize@6.6.2, sequelize@^6.6.2:
   version "6.6.2"
   resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-6.6.2.tgz#3681b0a4aeb106e31079d3a537d88542051dab2e"
   integrity sha512-H/zrzmTK+tis9PJaSigkuXI57nKBvNCtPQol0yxCvau1iWLzSOuq8t3tMOVeQ+Ep8QH2HoD9/+FCCIAqzUr/BQ==
@@ -4568,7 +4568,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sqlite3@^5.0.2:
+sqlite3@5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-5.0.2.tgz#00924adcc001c17686e0a6643b6cbbc2d3965083"
   integrity sha512-1SdTNo+BVU211Xj1csWa8lV6KM0CtucDwRyA0VHl91wEH1Mgh7RxUpI4rVvG7OhHrzCSGaVyW5g8vKvlrk9DJA==
@@ -4731,7 +4731,7 @@ superagent@^6.1.0:
     readable-stream "^3.6.0"
     semver "^7.3.2"
 
-supertest@^6.1.3:
+supertest@6.1.3:
   version "6.1.3"
   resolved "https://registry.yarnpkg.com/supertest/-/supertest-6.1.3.tgz#3f49ea964514c206c334073e8dc4e70519c7403f"
   integrity sha512-v2NVRyP73XDewKb65adz+yug1XMtmvij63qIWHZzSX8tp6wiq6xBLUy4SUAd2NII6wIipOmHT/FD9eicpJwdgQ==
