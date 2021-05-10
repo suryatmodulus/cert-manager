@@ -4,7 +4,9 @@
         "challengeDirectory": "./tmp/challenges/{domain}",
         "maintainerEmail": "sam@ghost.org",
         "subscriberEmail": "sam@ghost.org",
-        "directoryUrl": "https://pebble:14000/dir"
+        "directoryUrl": "https://pebble:14000/dir",
+        "renewOffset": "-45d",
+        "renewStagger": "15d"
     },
     "rateLimiter": {
         "amount": 100,

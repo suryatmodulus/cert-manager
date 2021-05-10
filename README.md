@@ -38,7 +38,9 @@ database to ensure high-availability will work.
 
 ### Service broker access
 
-As an alternative to the API, a service broker is available which allows users to 
+As an alternative to the API, a service broker is available which
+allows for Moleculer microservices to add and remove domains from the
+manager too.
 
 ## Develop
 
@@ -62,17 +64,15 @@ setup to enable `.local` domains, and using
 
 - `yarn lint` run just eslint
 - `yarn test` run lint and tests
+- `yarn test:integration` run integration tests (requires
+  `docker-compose` to be running)
 
-For the main tests, the server should already be running using
-docker-compose. As the system is tightly integrated with a reference
-ACME service, it makes sense to use integration tests rather than just
-unit tests. The integration tests check authentication using HMAC
-signed requests, adding domains and removing domains.
+For the unit tests (run with `yarn test`), mock structures are used to
+test specific components in the project. These should run extremely
+fast and avoid any external dependencies.
 
-Currently, the only domain that is used in tests is `ghost.local` -
-this is the only domain which is "linked" using docker-compose. To add
-more valid domains, add them to the list of linked domains in the
-docker-compose file.
+For the integration tests (run with `yarn test:integration`), a live
+instance should be running locally using `docker-compose`.
 
 ## Publish
 
@@ -83,4 +83,5 @@ docker-compose file.
 
 Copyright (c) 2013-2021 Ghost Foundation. All rights reserved.
 
-This code is considered closed-source and not for distribution. There is no opensource license associated with this project.
+This code is considered closed-source and not for distribution. There
+is no opensource license associated with this project.
