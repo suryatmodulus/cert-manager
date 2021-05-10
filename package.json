@@ -1,6 +1,6 @@
 {
   "name": "cert-manager",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "repository": "git@github.com:TryGhost/cert-manager.git",
   "author": "Ghost Foundation",
   "private": true,
