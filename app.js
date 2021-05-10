@@ -42,4 +42,13 @@ async function main() {
     }).start();
 }
 
+process.on('unhandledRejection', (error) => {
+    let errorMessage = '';
+    if (error && 'message' in error) {
+        // Take first line of error message to avoid huge log entries
+        errorMessage = '\n\tError message: ' + String(error.message).split('\n')[0];
+    }
+    logging.error('Unhandled promise rejection - Caught at application level' + errorMessage);
+});
+
 main();
