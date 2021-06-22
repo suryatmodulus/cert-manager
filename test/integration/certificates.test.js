@@ -16,7 +16,7 @@ const apiFetch = (url, body) => hmacFetch(`${BASE_URL}${url}`, {
  * time, as the process of creating a certificate goes on for several seconds after
  * the call to `addDomain` returns.
  */
-describe('Can add a certificate successfully', function () {
+describe('[Integration] Can add a certificate successfully', function () {
     it('Adds a domain', async function () {
         const res = await apiFetch('/addDomain', {
             domain: 'ghost.local'

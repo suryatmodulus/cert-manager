@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .js --cache",
     "posttest": "yarn lint",
     "preship": "yarn test",
-    "serviceBroker": "./node_modules/.bin/moleculer connect stan://localhost:4222 --ns cert-manager --id local",
+    "serviceBroker": "./node_modules/.bin/moleculer connect stan://localhost:4222 --ns zuul --id local",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
   },
   "devDependencies": {
@@ -30,9 +30,11 @@
   "dependencies": {
     "@sam-lord/greenlock": "4.2.0",
     "@tryghost/acme-http-01-sequelize": "0.2.2",
+    "@tryghost/errors": "0.2.13",
     "@tryghost/fastly-js": "0.2.6",
     "@tryghost/greenlock-manager-sequelize": "0.3.0",
     "@tryghost/greenlock-store-sequelize": "0.2.0",
+    "@tryghost/logging": "0.1.2",
     "express": "5.0.0-alpha.8",
     "ghost-ignition": "4.6.2",
     "moleculer": "0.14.13",

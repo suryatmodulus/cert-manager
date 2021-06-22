@@ -1,6 +1,6 @@
 const config = require('../lib/config');
-const logging = require('../lib/logging');
-const errors = require('ghost-ignition').errors;
+const logging = require('@tryghost/logging');
+const errors = require('@tryghost/errors');
 const crypto = require('crypto');
 const querystring = require('querystring');
 

@@ -6,7 +6,7 @@ const app = require('express')();
 const apiRoutes = require('../../lib/api');
 const CertificateService = require('../../lib/certificate-service');
 
-describe('API functions correctly', function () {
+describe('[Unit] API functions correctly', function () {
     before(function () {
         const certs = {};
         const certificateService = new CertificateService({

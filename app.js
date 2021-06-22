@@ -4,7 +4,7 @@ const challengeApp = express();
 
 const config = require('./lib/config');
 const dbConfig = require('./lib/database');
-const logging = require('./lib/logging');
+const logging = require('@tryghost/logging');
 const challengeResponder = require('./lib/challenge-responder');
 const apiRoutes = require('./lib/api');
 const fastly = require('./lib/fastly');

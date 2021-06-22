@@ -7,7 +7,7 @@ const CertificateService = require('../../lib/certificate-service');
 const challengeHandler = require('@tryghost/acme-http-01-sequelize').create({});
 const EventEmitter = require('events');
 
-describe('Correctly stores and retrieves challenges', function () {
+describe('[Unit] Correctly stores and retrieves challenges', function () {
     before(function () {
         const certificateService = new CertificateService({
             greenlock: {

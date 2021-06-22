@@ -17,7 +17,7 @@
         "hmac": "test"
     },
     "broker": {
-        "namespace": "cert-manager",
+        "namespace": "zuul",
         "logLevel": "info",
         "hotReload": true,
         "transporter": {

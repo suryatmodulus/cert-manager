@@ -1,4 +1,4 @@
-const errors = require('ghost-ignition').errors;
+const errors = require('@tryghost/errors');
 
 module.exports = ({certificateService}) => ({
     name: 'domains',
