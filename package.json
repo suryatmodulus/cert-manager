@@ -34,7 +34,7 @@
     "@tryghost/fastly-js": "0.2.6",
     "@tryghost/greenlock-manager-sequelize": "0.3.0",
     "@tryghost/greenlock-store-sequelize": "0.2.0",
-    "@tryghost/logging": "0.1.2",
+    "@tryghost/logging": "0.1.4",
     "express": "5.0.0-alpha.8",
     "ghost-ignition": "4.6.2",
     "moleculer": "0.14.13",
