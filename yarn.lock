@@ -424,10 +424,10 @@
     "@tryghost/ignition-errors" "^0.1.0"
     lodash "^4.17.21"
 
-"@tryghost/fastly-js@0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.6.tgz#cac983b5e4699dd1768dafb7cba81d3b630c151e"
-  integrity sha512-RwwPw2LmEbFs4WOrSp50eBUPpR19lAcUAfRyMPuJ0zE4gII4+ohfWuGnS8RpyWUPKUJfJvJGgAw2JW6wkvMMdQ==
+"@tryghost/fastly-js@0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/fastly-js/-/fastly-js-0.2.7.tgz#676eb79ad3825fc529e878356d430f2d6aaedf15"
+  integrity sha512-7Bf5pOnNzfYJYrt+84n0N5caS038txwLGcvTs1LEHv1KJE6Qjg009QGaftBdphohU1fdaAIiQND7wdoFnXG2gQ==
   dependencies:
     node-fetch "^2.6.1"
 
