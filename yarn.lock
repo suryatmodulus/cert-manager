@@ -309,11 +309,6 @@
   resolved "https://registry.yarnpkg.com/@root/pem/-/pem-1.0.4.tgz#9ecc3419c0a05c92b8ecbfe0a41f474970f8c72f"
   integrity sha512-rEUDiUsHtild8GfIjFE9wXtcVxeS+ehCJQBwbQQ3IVfORKHK93CFnRtkr69R75lZFjcmKYVc+AXDB+AeRFOULA==
 
-"@root/request@^1.6.1":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@root/request/-/request-1.7.0.tgz#d9be84c82201e64a2578323e98704cb79dd8dd74"
-  integrity sha512-lre7XVeEwszgyrayWWb/kRn5fuJfa+n0Nh+rflM9E+EpC28yIYA+FPm/OL1uhzp3TxhQM0HFN4FE2RDIPGlnmg==
-
 "@root/x509@^0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@root/x509/-/x509-0.7.2.tgz#422ca7e46c09f5ddf3af86306383778eb004ace1"
@@ -322,33 +317,38 @@
     "@root/asn1" "^1.0.0"
     "@root/encoding" "^1.0.1"
 
-"@sam-lord/acme@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@sam-lord/acme/-/acme-3.3.0.tgz#1a4acca76ce61830f74e005c22e4433813067764"
-  integrity sha512-EBHmaDXjF19/wuUBXn9uYomYqHGldDn+3NApZoTeR+L/FzyxPoRJcgydt327K9+jjgAEpP9cY3aUTa9Z8YX37Q==
+"@sam-lord/acme@3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@sam-lord/acme/-/acme-3.4.1.tgz#69a30c62822923fe88cfead66d9f4ac8a19fd122"
+  integrity sha512-J4mlYEbk1IML+Fzue/0o22Hofh4j9pFkx6f6/l14nIKIN+RGnpDdj4l2yIrz8i5EPszI1lhWvhMyWXJCmn8jJw==
   dependencies:
     "@root/csr" "^0.8.1"
     "@root/encoding" "^1.0.1"
     "@root/keypairs" "^0.10.0"
     "@root/pem" "^1.0.4"
-    "@root/request" "^1.6.1"
     "@root/x509" "^0.7.2"
+    "@sam-lord/request" "1.7.1"
 
-"@sam-lord/greenlock@4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.2.0.tgz#90ee8f266544ed335e8769c5c2ef53c66f152eef"
-  integrity sha512-lIKuEUsDPQV8tHk7d0bhkJq1BwAv/pT1pDpRVdlY3mjQvWLv+gzIKxR2ErxnYJH9qFvMnnr2zekJiX6VmoIXWw==
+"@sam-lord/greenlock@4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@sam-lord/greenlock/-/greenlock-4.2.1.tgz#d59bf23342ec8aed8d837dcc6e30406ccb417480"
+  integrity sha512-bIZkfrmhT2faKdY2Kuu31EIr+G7r6pKOZbBf9HZqqGhiPIBz8oKGczEBZdk4t+r0ZEMdN1I2WtjambFT/BpA+Q==
   dependencies:
     "@greenlock/manager" "^3.1.0"
     "@root/csr" "^0.8.1"
     "@root/keypairs" "^0.10.0"
     "@root/mkdirp" "^1.0.0"
-    "@root/request" "^1.6.1"
-    "@sam-lord/acme" "^3.3.0"
+    "@sam-lord/acme" "3.4.1"
+    "@sam-lord/request" "1.7.1"
     acme-http-01-standalone "^3.0.5"
     cert-info "^1.5.1"
     greenlock-store-fs "^3.2.2"
     safe-replace "^1.1.0"
+
+"@sam-lord/request@1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@sam-lord/request/-/request-1.7.1.tgz#b8b7ca76a45f023369d2c755a12df25869163408"
+  integrity sha512-HmBd7Yr8jcEkKI7L/J1exjHOrvh6uic+4zoiSedJg3yAmL9JJT82lzeLnECHrycTj0KtOtwwkvzk8Z+prJrQEA==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
