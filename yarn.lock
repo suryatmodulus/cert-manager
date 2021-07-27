@@ -431,10 +431,10 @@
   dependencies:
     node-fetch "^2.6.1"
 
-"@tryghost/greenlock-manager-sequelize@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-sequelize/-/greenlock-manager-sequelize-0.3.0.tgz#96191c77c6327813a232216ec5ee83b2b3a1efce"
-  integrity sha512-53MCVF+1qZKrWu15tpGxwPq2vxlDR+addIe+poN8FbZkICTybg2/HymxMW6KBPvtuNsRMcKibJJdZoOjupaujg==
+"@tryghost/greenlock-manager-sequelize@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@tryghost/greenlock-manager-sequelize/-/greenlock-manager-sequelize-0.3.1.tgz#5d152dbd146b091d371d0f8b3099a6da3b3cfc7d"
+  integrity sha512-6jhZ4Wo8Yq6tCGhES6PFsRpOGZ9JJUQoXCxbfW7VpppwYJEW/GhlPie1YgM/J7TEHRNHiZRa5Ix0JJl4NynLOg==
   dependencies:
     sequelize "^6.6.2"
 
