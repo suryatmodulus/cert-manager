@@ -23,7 +23,7 @@
     "moleculer-cli": "0.7.1",
     "node-fetch": "2.6.1",
     "should": "13.2.3",
-    "sinon": "10.0.0",
+    "sinon": "11.1.2",
     "sqlite3": "5.0.2",
     "supertest": "6.1.3"
   },
