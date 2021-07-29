@@ -38,7 +38,7 @@
     "@tryghost/greenlock-store-sequelize": "0.2.0",
     "@tryghost/logging": "0.1.2",
     "express": "5.0.0-alpha.8",
-    "ghost-ignition": "4.6.2",
+    "ghost-ignition": "4.6.3",
     "heapdump": "0.3.15",
     "moleculer": "0.14.13",
     "mysql2": "2.2.5",
