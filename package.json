@@ -1,9 +1,9 @@
 {
   "name": "cert-manager",
   "version": "0.3.7",
+  "license": "MIT",
   "repository": "git@github.com:TryGhost/cert-manager.git",
   "author": "Ghost Foundation",
-  "private": true,
   "main": "app.js",
   "scripts": {
     "dev": "node --inspect=0.0.0.0 app.js",

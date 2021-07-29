@@ -78,10 +78,6 @@ instance should be running locally using `docker-compose`.
 
 - `yarn ship`
 
+# Copyright & License
 
-# Copyright & License 
-
-Copyright (c) 2013-2021 Ghost Foundation. All rights reserved.
-
-This code is considered closed-source and not for distribution. There
-is no opensource license associated with this project.
+Copyright (c) 2013-2021 Ghost Foundation - Released under the [MIT license](LICENSE).
