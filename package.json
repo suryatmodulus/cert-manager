@@ -14,7 +14,9 @@
     "posttest": "yarn lint",
     "preship": "yarn test",
     "serviceBroker": "./node_modules/.bin/moleculer connect stan://localhost:4222 --ns zuul --id local",
-    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
+    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi",
+    "countKeys": "NODE_ENV=production node bin/count-keys.js",
+    "countCerts": "NODE_ENV=production node bin/count-certs.js"
   },
   "devDependencies": {
     "eslint": "7.25.0",
