@@ -33,7 +33,7 @@
     "@sam-lord/greenlock": "4.2.1",
     "@tryghost/acme-http-01-sequelize": "0.2.2",
     "@tryghost/errors": "0.2.13",
-    "@tryghost/fastly-js": "0.2.8",
+    "@tryghost/fastly-js": "0.2.9",
     "@tryghost/greenlock-manager-sequelize": "0.3.1",
     "@tryghost/greenlock-store-sequelize": "0.2.0",
     "@tryghost/logging": "0.1.2",
