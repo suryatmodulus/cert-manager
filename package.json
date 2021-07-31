@@ -19,7 +19,7 @@
     "countCerts": "NODE_ENV=production node bin/count-certs.js"
   },
   "devDependencies": {
-    "eslint": "7.25.0",
+    "eslint": "7.32.0",
     "eslint-plugin-ghost": "2.2.0",
     "mocha": "8.4.0",
     "moleculer-cli": "0.7.1",
