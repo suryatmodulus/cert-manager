@@ -12,6 +12,9 @@ const greenlock = require('./lib/greenlock');
 const CertificateService = require('./lib/certificate-service');
 const serviceBroker = require('./lib/service-broker');
 
+// For debugging memory leak
+require('heapdump');
+
 /**
  * Main functionality includes:
  * - setting up HTTP server to respond to ACME challenges
